@@ -35,12 +35,14 @@ catz = [cat_art, cat_art_2, cat_art_3]
 
 def catsay(message):
     # Create a border for the message
-    border = '-' * len(message)
+    border = 'o' * len(message)
     
     # Print the message with the cat art
     print(f" {border} ")
     print(f"< {message} >")
     print(f" {border} ")
+    print("    o    ") 
+    print("    o    ")
     print(random.choice(catz))
 
 if __name__ == "__main__":
